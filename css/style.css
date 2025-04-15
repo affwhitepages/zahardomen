@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --levis-blue: #002244;
+  --levis-red: #C41230;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #333;
+}
+.navbar {
+  background-color: var(--levis-blue);
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.webp');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.section {
+  padding: 80px 0;
+}
+.bg-denim {
+  background-color: #e6f3f8;
+}
+.bg-pattern {
+    background-image: url('../images/cubes.png');
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.image-container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.image-container img {
+    transition: transform 0.3s ease-in-out;
+}
+.image-container img:hover {
+    transform: scale(1.05);
+}
